@@ -28,12 +28,11 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/services" element={<Service />} />
         <Route path="/booking" element={<Booking />} />
-        <Route exact path="/" element={<AdminRoute />}>
-          <Route path="/admin/dashboard" element={<Dashboard />} />
+        <Route path="/admin/dashboard" element={<Dashboard />} />
           <Route path="/admin/technicians" element={<Technicians />} />
           <Route path="/admin/services" element={<Services />} />
           <Route path="/admin/orders" element={<RepairOrders />} />
-        </Route>
+
       </Routes>
     </BrowserRouter>
   );
